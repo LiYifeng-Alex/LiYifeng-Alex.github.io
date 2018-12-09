@@ -346,47 +346,19 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2018/10/29/storm01/">
+        <a class="abstract-title" href="/2018/12/09/UnixFileIO/">
             
-                <span>storm学习笔记1</span>
+                <span>Unix 文件 I/O</span>
         </a>
         <div class="abstract-content">
-            流式计算 Storm 学习笔记Storm用于实时计算，Hadoop用于离线计算Storm核心组件
-
-Nimbus：负责资源分配和任务调度。
-Supervisor：负责接受nimbus分配的任务，启动和停止属于自己管理的worker进程。—通过配置文件设置当前supervisor上启动多少个worker。
-Worker：运行具体处理组件逻辑的进程。Worker运行的任务类型只有两种，一种是Spout任务，一种是Bolt任务。
-Task：worker中每一个spout/bolt的线程称为一个task. 在storm0.8之后，task不再与物理线程对应，不同spout/bolt的task可能...
+            Unix 文件 I/Oopen 函数调用open 函数打开创建一个文件12#inlcude&lt;fcnl.h&gt;int		open(const char 	*pathname,	int		oflag,	..../*mode_t mode*/);
+creat 函数也可以调用creat 函数创建一个新文件。12#include&lt;fcnl.h&gt;int		creat(const		char	*pathname,		mode_t mode);
+lseek 函数lseek 函数显式打开文件设置其偏移量12#include&lt;unistd.h&gt;off_t		lseek(in...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/29</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2018/10/29/java-introspector/">
-            
-                <span>Java 内省和 BeanUtils</span>
-        </a>
-        <div class="abstract-content">
-            Java 内省和 BeanUtils需求
-以后我们开发框架 的时候，我们是经常需要把一些数据封装到对象中的。
-根据配置文件的内容生产对象的对象并且要把对象的属性值封装到对象中。现在有一个类Person123456789101112131415161718192021222324252627 public class Person&#123;	int id;	String name;public Person(int id, String name) &#123;	super();	this.id = id;	this.name = name;&#125;		public Person()...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/29</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/09</span>
             </div>
             <!-- tags  -->
             
